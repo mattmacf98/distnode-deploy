@@ -2,11 +2,12 @@
 
 const server = require('fastify')();
 const HOST = process.env.HOST || '127.0.0.1';
+/* istanbul ignore next */
 const PORT = process.env.PORT || 8000;
 const Recipe = require('./recipe.js');
 
 server.get('/', async (req, res) => {
-    return "hello from Distributed Node.js!";
+    return "Hello from Distributed Node.js!";
 });
 
 server.get('/recipes/:id', async (req, res) => {
