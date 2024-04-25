@@ -4,12 +4,17 @@
   "description": "Distributed Node JS Sample Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"FAKE TESTS\" && exit 0"
+    "test": "nyc tape ./test/**/*.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fastify": "3.2"
+  },
+  "devDependencies": {
+    "node-fetch": "2.6",
+    "nyc": "^15.1.0",
+    "tape": "^5.7.5"
   }
 }
